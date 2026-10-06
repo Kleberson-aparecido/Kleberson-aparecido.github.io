@@ -3,61 +3,386 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kleberson | Portfólio</title>
+
+    <title>Kleberson Aparecido | Portfólio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom: 1px solid #334155;
+        }
+
+        header h1 {
+            font-size: 44px;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            font-size: 20px;
+            color: #94a3b8;
+        }
+
+        .destaque {
+            color: #38bdf8;
+            font-weight: bold;
+        }
+
+        nav {
+            background: #020617;
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        main {
+            max-width: 950px;
+            margin: auto;
+            padding: 45px 20px;
+        }
+
+        section {
+            background: #1e293b;
+            padding: 32px;
+            margin-bottom: 28px;
+            border-radius: 16px;
+            border: 1px solid #334155;
+        }
+
+        h2 {
+            margin-bottom: 18px;
+            font-size: 27px;
+        }
+
+        h3 {
+            margin-bottom: 8px;
+            color: #f1f5f9;
+        }
+
+        p {
+            color: #cbd5e1;
+        }
+
+        .formacao,
+        .experiencia,
+        .projeto {
+            margin-bottom: 22px;
+            padding: 20px;
+            background: #0f172a;
+            border-radius: 12px;
+        }
+
+        .cargo {
+            color: #38bdf8;
+            font-weight: bold;
+        }
+
+        .periodo {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #cbd5e1;
+        }
+
+        .habilidades {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .habilidades li {
+            background: #0f172a;
+            border: 1px solid #334155;
+            padding: 9px 14px;
+            border-radius: 20px;
+            margin: 0;
+        }
+
+        .contato a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 35px 20px;
+            background: #020617;
+            color: #64748b;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            header p {
+                font-size: 17px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 7px;
+            }
+
+            section {
+                padding: 23px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
-        <h1>Olá, eu sou o Kleberson 👋</h1>
-        <p>Estudante de Tecnologia da Informação</p>
+        <h1>Kleberson Aparecido 👋</h1>
+        <p>
+            Estudante de <span class="destaque">Gestão da Tecnologia da Informação</span>
+            & Gestão Comercial
+        </p>
     </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#formacao">Formação</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </nav>
 
     <main>
 
-        <section>
-            <h2>Sobre mim</h2>
+        <section id="sobre">
+            <h2>👨‍💻 Sobre mim</h2>
+
             <p>
-                Sou estudante de Tecnologia da Informação e estou iniciando
-                minha jornada na área de tecnologia.
+                Sou estudante de Gestão da Tecnologia da Informação e Gestão Comercial,
+                atualmente desenvolvendo minha carreira na área de tecnologia.
+            </p>
+
+            <br>
+
+            <p>
+                Possuo experiência profissional em gestão de operações, liderança de
+                equipes, atendimento ao cliente, treinamento de colaboradores,
+                organização de processos e acompanhamento de indicadores de desempenho.
+            </p>
+
+            <br>
+
+            <p>
+                Tenho perfil analítico, organizado, proativo e foco em resultados.
+                Busco uma oportunidade para desenvolver meus conhecimentos em tecnologia
+                e construir minha carreira profissional na área de TI.
             </p>
         </section>
 
-        <section>
-            <h2>🎓 Formação</h2>
-            <p>Tecnologia da Informação — 1º semestre</p>
+
+        <section id="formacao">
+            <h2>🎓 Formação acadêmica</h2>
+
+            <div class="formacao">
+                <h3>Gestão da Tecnologia da Informação</h3>
+                <p class="cargo">UNICID — Cursando</p>
+            </div>
+
+            <div class="formacao">
+                <h3>Gestão Comercial</h3>
+                <p class="cargo">UNICID — Cursando</p>
+            </div>
+
+            <div class="formacao">
+                <h3>Técnico em Administração</h3>
+            </div>
+
+            <div class="formacao">
+                <h3>Ensino Médio</h3>
+                <p>Completo</p>
+            </div>
         </section>
 
-        <section>
-            <h2>🚀 Meu objetivo</h2>
-            <p>
-                Busco minha primeira oportunidade na área de TI para colocar
-                meus conhecimentos em prática e continuar aprendendo.
-            </p>
+
+        <section id="experiencia">
+            <h2>💼 Experiência profissional</h2>
+
+            <div class="experiencia">
+                <h3>NY Parada do Pastel</h3>
+                <p class="cargo">Gerente de Loja</p>
+                <p class="periodo">Abril/2026 – Agosto/2026</p>
+
+                <ul>
+                    <li>Gerenciamento das operações da loja.</li>
+                    <li>Liderança e desenvolvimento da equipe.</li>
+                    <li>Planejamento e gestão de escalas.</li>
+                    <li>Recrutamento e treinamento de colaboradores.</li>
+                    <li>Controle de estoque e inventários.</li>
+                    <li>Acompanhamento de metas e KPIs.</li>
+                    <li>Atendimento ao cliente e resolução de ocorrências.</li>
+                </ul>
+            </div>
+
+            <div class="experiencia">
+                <h3>Mar Quente</h3>
+                <p class="cargo">Assistente Administrativo</p>
+                <p class="periodo">Outubro/2024 – Maio/2025</p>
+
+                <ul>
+                    <li>Suporte às áreas Administrativa, Financeira e Recursos Humanos.</li>
+                    <li>Organização de documentos e processos administrativos.</li>
+                    <li>Apoio às rotinas operacionais da empresa.</li>
+                </ul>
+            </div>
+
+            <div class="experiencia">
+                <h3>ZAMP S.A. — Burger King</h3>
+                <p class="cargo">Instrutor de Treinamento</p>
+
+                <ul>
+                    <li>Treinamento e integração de novos colaboradores.</li>
+                    <li>Acompanhamento dos padrões operacionais.</li>
+                    <li>Desenvolvimento da equipe e suporte aos gestores.</li>
+                </ul>
+            </div>
+
+            <div class="experiencia">
+                <h3>Mercado Bem Barato</h3>
+                <p class="cargo">Líder de Operações</p>
+                <p class="periodo">Março/2023 – Julho/2024</p>
+
+                <ul>
+                    <li>Liderança da equipe operacional.</li>
+                    <li>Controle das operações da loja.</li>
+                    <li>Gestão de estoque e organização dos processos.</li>
+                </ul>
+            </div>
+
+            <div class="experiencia">
+                <h3>Fratelli Promotora</h3>
+                <p class="cargo">Vendedor Receptivo</p>
+                <p class="periodo">Fevereiro/2021 – Março/2022</p>
+
+                <ul>
+                    <li>Atendimento ao cliente.</li>
+                    <li>Negociação e fechamento de vendas.</li>
+                    <li>Suporte ao processo comercial.</li>
+                </ul>
+            </div>
         </section>
 
-        <section>
-            <h2>🛠️ O que estou aprendendo</h2>
-            <ul>
-                <li>Lógica de programação</li>
-                <li>Git e GitHub</li>
-                <li>Desenvolvimento de sistemas</li>
-                <li>Fundamentos de Tecnologia da Informação</li>
+
+        <section id="habilidades">
+            <h2>🛠️ Competências</h2>
+
+            <ul class="habilidades">
+                <li>Gestão de Loja</li>
+                <li>Gestão Operacional</li>
+                <li>Liderança</li>
+                <li>Gestão de Pessoas</li>
+                <li>Recrutamento e Seleção</li>
+                <li>Treinamento</li>
+                <li>KPIs</li>
+                <li>Controle de Estoque</li>
+                <li>Microsoft Office</li>
+                <li>Comunicação</li>
+                <li>Resolução de Problemas</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Lógica de Programação</li>
             </ul>
         </section>
 
-        <section>
+
+        <section id="projetos">
             <h2>📂 Projetos</h2>
+
+            <div class="projeto">
+                <h3>🌐 Meu Portfólio</h3>
+                <p>
+                    Site pessoal desenvolvido em HTML e publicado utilizando
+                    GitHub Pages.
+                </p>
+            </div>
+
+            <div class="projeto">
+                <h3>🚀 Projetos acadêmicos</h3>
+                <p>
+                    Em breve adicionarei meus projetos desenvolvidos durante
+                    minha graduação em Tecnologia da Informação.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="contato" class="contato">
+            <h2>📫 Contato</h2>
+
             <p>
-                Em breve adicionarei meus projetos acadêmicos e pessoais.
+                <strong>E-mail:</strong>
+                <a href="mailto:souzakleber876@gmail.com">
+                    souzakleber876@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>LinkedIn:</strong>
+                <a href="https://linkedin.com/in/kleberson-aparecido-batista-75690a424">
+                    Meu LinkedIn
+                </a>
+            </p>
+
+            <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/Kleberson-aparecido">
+                    Meu GitHub
+                </a>
             </p>
         </section>
 
     </main>
 
     <footer>
-        <p>© 2026 Kleberson-aparecido</p>
+        © 2026 Kleberson Aparecido | Portfólio de Tecnologia da Informação
     </footer>
 
 </body>
-<html>
+</html>
